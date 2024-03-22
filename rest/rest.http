@@ -1,0 +1,25 @@
+POST http://localhost:3000/tracker
+Content-Type: application/json
+
+{
+    "details.fullName": "Andre Perez",
+    "details.vax_brand": "Mee",
+    "details.nameofvaccinator": "Mee",
+    "details.address": "473 Tisfa urnpike"
+}
+
+//patch by id
+
+PATCH  http://localhost:3000/tracker/
+
+Content-Type: application/json
+    {
+        "details.fullName": "Mee",
+        "details.vax_brand": "Mee"
+    }
+
+###get all
+GET http://localhost:3000/tracker
+
+###delete by id
+DELETE http://localhost:3000/tracker/id
